@@ -1,24 +1,24 @@
 /* 기본 폰트 설정 */
 html {
-  font-size: $font-size-root; // 62.5% = 10px = 1rem
+    font-size: $font-size-root; // 62.5% = 10px = 1rem
 }
 body {
-  overflow-x: hidden;
-  font-size: $font-size-base; // 17px = 1.6rem
-  line-height: $line-height-base; // 1.5
-  font-family: $font-family-base; // "Noto Sans KR", sans-serif;
-  color: $font-color-base; // #1d1d1d;
-  font-weight: $font-weight-base; // 400
+    overflow-x: hidden;
+    font-size: $font-size-base; // 17px = 1.6rem
+    line-height: $line-height-base; // 1.5
+    font-family: $font-family-base; // "Noto Sans KR", sans-serif;
+    color: $font-color-base; // #1d1d1d;
+    font-weight: $font-weight-base; // 400
 }
 
 a {
-  color: $font-color-base;
-  text-decoration: none;
+    color: $font-color-base;
+    text-decoration: none;
 
-  &:active,
-  &:hover {
-    text-decoration: underline;
-  }
+    &:active,
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 /* reset */
@@ -50,19 +50,19 @@ input,
 select,
 button,
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 fieldset,
 img {
-  border: 0 none;
+    border: 0 none;
 }
 
 img,
 video {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 dl,
@@ -70,87 +70,87 @@ ul,
 ol,
 menu,
 li {
-  list-style: none;
+    list-style: none;
 }
 
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
 
 blockquote {
-  &:before,
-  &:after {
-    content: "";
-    content: none;
-  }
+    &:before,
+    &:after {
+        content: '';
+        content: none;
+    }
 }
 
 q {
-  &:before,
-  &:after {
-    content: "";
-    content: none;
-  }
+    &:before,
+    &:after {
+        content: '';
+        content: none;
+    }
 }
 
 input,
 select,
 textarea {
-  font-size: 100%;
-  vertical-align: middle;
+    font-size: 100%;
+    vertical-align: middle;
 }
 
 button {
-  font-size: 100%;
-  vertical-align: middle;
-  border: 0 none;
-  background-color: transparent;
-  cursor: pointer;
+    font-size: 100%;
+    vertical-align: middle;
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 body {
-  -webkit-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
 }
 
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
 input {
-  &[type="text"],
-  &[type="password"],
-  &[type="submit"],
-  &[type="search"] {
-    appearance: none;
-    border-radius: 0;
-  }
+    &[type='text'],
+    &[type='password'],
+    &[type='submit'],
+    &[type='search'] {
+        appearance: none;
+        border-radius: 0;
+    }
 
-  &:checked[type="checkbox"] {
-    background-color: $gray-20;
-    appearance: checkbox;
-  }
+    &:checked[type='checkbox'] {
+        background-color: $gray-20;
+        appearance: checkbox;
+    }
 }
 
 button {
-  appearance: button;
-  border-radius: 0;
+    appearance: button;
+    border-radius: 0;
 }
 
 input {
-  &[type="button"],
-  &[type="submit"],
-  &[type="reset"],
-  &[type="file"] {
-    appearance: button;
-    border-radius: 0;
-  }
+    &[type='button'],
+    &[type='submit'],
+    &[type='reset'],
+    &[type='file'] {
+        appearance: button;
+        border-radius: 0;
+    }
 
-  &[type="search"]::-webkit-search-cancel-button {
-    appearance: none;
-  }
+    &[type='search']::-webkit-search-cancel-button {
+        appearance: none;
+    }
 }
 
 address,
@@ -160,92 +160,102 @@ code,
 dfn,
 em,
 var {
-  font-style: normal;
-  font-weight: normal;
+    font-style: normal;
+    font-weight: normal;
 }
 
 hr {
-  display: none;
+    display: none;
 }
 
-input[type="password"] {
-  font-family: "Malgun Gothic";
+input[type='password'] {
+    font-family: 'Malgun Gothic';
 }
 
 /* 이미지 스프라이트 */
 .img-g {
-  display: inline-block;
-  overflow: hidden;
-  // background: url(../../images/comm/img-comm.png) no-repeat;
-  vertical-align: top;
+    display: inline-block;
+    overflow: hidden;
+    // background: url(../../images/comm/img-comm.png) no-repeat;
+    vertical-align: top;
 }
 
 .ir-pm {
-  display: block;
-  overflow: hidden;
-  font-size: 0px;
-  line-height: 0;
-  text-indent: -9999px;
+    display: block;
+    overflow: hidden;
+    font-size: 0px;
+    line-height: 0;
+    text-indent: -9999px;
 }
 
 /* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
 .ir-wa {
-  display: block;
-  overflow: hidden;
-  position: relative;
-  z-index: -10;
-  width: 100%;
-  height: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
 }
 
 /* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
 .blind,
 caption,
 legend {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
+    position: absolute;
+    clip-path: inset(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }
 
 /* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
 .f_l {
-  float: left;
+    float: left;
 }
 
 .f_r {
-  float: right;
+    float: right;
 }
 
 .show {
-  display: block;
+    display: block;
 }
 
 .hide {
-  display: none;
+    display: none;
 }
 
 .tbl {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* 테이블 초기화 */
 .clearfix {
-  display: block;
-  overflow: visible;
-  width: auto;
-  clear: both;
-  zoom: 1;
-
-  &:after {
-    display: block;
-    visibility: hidden;
-    height: 0;
-    font-size: 0;
+    display: flow-root;
+    overflow: visible;
+    width: auto;
     clear: both;
-    content: "";
-  }
+    zoom: 1;
+
+    &:after {
+        display: block;
+        visibility: hidden;
+        height: 0;
+        font-size: 0;
+        clear: both;
+        content: '';
+    }
+}
+
+/* 폼 요소들 일관된 스타일 적용 */
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
