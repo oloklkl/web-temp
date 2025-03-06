@@ -1,0 +1,27 @@
+// mobile (600px 미만)
+@mixin mobile {
+    @media (max-width: ($breakpoint-sm - 1px)) {
+        @content;
+    }
+}
+
+// tablet (600px ~ 1023px)
+@mixin tablet {
+    @media (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1px)) {
+        @content;
+    }
+}
+
+// desktop (1024px 이상)
+@mixin desktop {
+    @media (min-width: $breakpoint-md) {
+        @content;
+    }
+}
+
+// large desktop (1920px 이상)
+@mixin desktopLarge {
+    @media (min-width: $breakpoint-lg) {
+        @content;
+    }
+}
