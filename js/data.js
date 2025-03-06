@@ -1,0 +1,28 @@
+let obj = [
+    { id: 1, img: 'images/photo0.jpg', title: '고양이' },
+    { id: 2, img: 'images/photo1.jpg', title: '강아지' },
+    { id: 3, img: 'images/photo2.jpg', title: '거북이' },
+    { id: 4, img: 'images/photo3.jpg', title: '토끼' },
+    { id: 5, img: 'images/photo4.jpg', title: '뱀' },
+    { id: 6, img: 'images/photo5.jpg', title: '사자' },
+    { id: 7, img: 'images/photo6.jpg', title: '호랑이' },
+    { id: 8, img: 'images/photo7.jpg', title: '표범' },
+    { id: 9, img: 'images/photo8.jpg', title: '치타' },
+    { id: 10, img: 'images/photo9.jpg', title: '하이에나' },
+    { id: 11, img: 'images/photo10.jpg', title: '기린' },
+    { id: 12, img: 'images/photo11.jpg', title: '코끼리' },
+    { id: 13, img: 'images/photo12.jpg', title: '코뿔소' },
+    { id: 14, img: 'images/photo13.jpg', title: '하마' },
+    { id: 15, img: 'images/photo14.jpg', title: '부엉이' },
+    { id: 16, img: 'images/photo15.jpg', title: '올빼미' },
+    { id: 17, img: 'images/photo16.jpg', title: '판다' },
+    { id: 18, img: 'images/photo17.jpg', title: '돼지' },
+    { id: 19, img: 'images/photo18.jpg', title: '원숭이' },
+    { id: 20, img: 'images/photo19.jpg', title: '칠면조' },
+    { id: 21, img: 'images/photo20.jpg', title: '직박구리' },
+    { id: 22, img: 'images/photo21.jpg', title: '앵무새' },
+    { id: 23, img: 'images/photo22.jpg', title: '스라소니' },
+    { id: 24, img: 'images/photo23.jpg', title: '오소리' },
+];
+
+export default obj;

@@ -1,0 +1,96 @@
+// 메인 페이지 스타일
+.slide-intro {
+  .swiper-slide {
+    position: relative;
+    &.swiper-slide-active {
+      .text-area {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    img {
+      object-position: 50% 100%;
+    }
+    .text-area {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 70%;
+      max-width: 400px;
+      opacity: 0;
+      transition: all 0.5s;
+      // .text-area__tit
+      &__tit {
+        font-size: 3rem;
+        color: $gray-90;
+        font-family: 'GmarketSansMedium';
+        font-weight: $font-medium;
+      }
+      &__cont {
+        color: $gray-70;
+      }
+      &__goto {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 7px 20px;
+        background: $primary;
+        color: $white;
+      }
+    }
+    img {
+      height: 50vh;
+    }
+  }
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+// tablet
+@media screen and (min-width: 600px) {
+  .slide-intro .swiper-slide img {
+    height: 70vh;
+  }
+}
+
+// desktop
+@media screen and (min-width: 1024px) {
+  .slide-intro {
+    .swiper-slide {
+      img {
+        height: 70vh;
+      }
+      .text-area {
+        width: 100%;
+        max-width: none;
+        text-align: left;
+      }
+      .text-area__tit {
+        font-size: 6rem;
+      }
+      .text-area__cont {
+        font-size: 2rem;
+      }
+      .text-area__goto {
+        margin-top: 30px;
+      }
+    }
+    .swiper-pagination {
+      display: block;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+}
+
+.slide-studio {
+  overflow: visible;
+  margin-left: 0;
+  .swiper-pagination {
+    bottom: -50px;
+  }
+}
