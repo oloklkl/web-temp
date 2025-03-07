@@ -1,13 +1,7 @@
 // 사이트 공통 스타일
-
-/* footer */
-#footer {
-    background: #e91e63;
-    height: 300px;
-}
-#footer .inner {
-    height: 250px;
-    padding: 80px 0;
+#wrap {
+    width: 100%;
+    min-width: 1600px;
 }
 
 /* 서버공통 이름 */

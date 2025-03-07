@@ -52,12 +52,9 @@
 }
 
 // header
-#header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: $hdH;
-    z-index: 100;
-    background: $gray-90;
+
+// footer
+#footer {
+    background: #e91e63;
+    height: 300px;
 }
