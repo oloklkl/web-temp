@@ -48,19 +48,67 @@ $gray-90: #1d1d1d; // text-title
 $gray-100: #000000;
 
 //font weight
-$font-light: 300 !default;
-$font-normal: 400 !default;
+$font-light: 100 !default;
+$font-normal: 300 !default;
+$font-regular: 400 !default;
 $font-medium: 500 !default;
-$font-semibold: 600 !default;
 $font-bold: 700 !default;
-$font-bolder: 800 !default;
 
 // font-style
-$font-family-base: 'Spoqa Han Sans', sans-serif !default;
+$font-family-base: 'Spoqa Han Sans Neo', sans-serif !default;
 $font-size-root: 62.5% !default; //10px 1rem으로 설정
 $font-size-base: 1.7rem !default;
 $font-color-base: $gray-90 !default;
 $font-weight-base: $font-normal !default;
+
+$font-size: (
+    sizes: (
+        display: (
+            'sm': '4.8rem',
+            'md': '6rem',
+            'lg': '7.2rem',
+        ),
+        heading: (
+            'sm': '3.6rem',
+            'md': '4.8rem',
+            'lg': '5.6rem',
+        ),
+        title: (
+            'xsm': '1.8rem',
+            'sm': '2rem',
+            'md': '2.4rem',
+            'lg': '2.8rem',
+            'xlg': '3.2rem',
+            'xxlg': '4rem',
+        ),
+        body: (
+            'sm': '1.6rem',
+            'md': '1.8rem',
+            'lg': '2rem',
+        ),
+        link: (
+            'sm': '1.6rem',
+            'md': '1.8rem',
+            'lg': '2rem',
+        ),
+        detail: (
+            'sm': '1.4rem',
+            'md': '1.6rem',
+            'lg': '1.8rem',
+        ),
+        label: (
+            'xsm': '1.4rem',
+            'sm': '1.6rem',
+            'md': '1.8rem',
+            'lg': '2rem',
+        ),
+    ),
+) !default;
+
+// 폰트 크기 매핑 함수
+@function font($category, $size) {
+    @return map-get(map-get($font-size, sizes), $category, $size);
+}
 
 //line height style
 $line-height-none: 1 !default;
